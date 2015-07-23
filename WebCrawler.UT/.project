@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>WebCrawler</name>
+	<name>WebCrawler.UT</name>
 	<comment></comment>
 	<projects>
-		<project>WebCrawler.UT</project>
+		<project>WebCrawler</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

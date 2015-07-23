@@ -21,8 +21,29 @@ public class WebPage
 		this.anchor = anchor;
 	}
 	
+	// Getters
+	public Document getDocument()
+	{
+		return this.document;
+	}
+	
+	public int getEmailParseStatus()
+	{
+		return this.emailParseStatus;
+	}
+	
+	public String getWebPageHash()
+	{
+		return this.webPageHash;
+	}
+	
+	public int getAnchorPageStatus()
+	{
+		return this.anchorParseStatus;
+	}
+	
 	// JSoup carregando o html
-	private void loadDocumentFromWeb()
+	public void loadDocumentFromWeb()
 	{
 		try 
 		{

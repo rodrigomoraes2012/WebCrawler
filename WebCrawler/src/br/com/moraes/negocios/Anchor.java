@@ -13,14 +13,14 @@ public class Anchor
 	private Timestamp created;
 
 	// Construtores
-	Anchor(Domain domain, String anchorHash, String anchorUrl)
+	public Anchor(Domain domain, String anchorHash, String anchorUrl)
 	{
 		this.domain = domain;
 		this.anchorHash = anchorHash;
 		this.anchorUrl = anchorUrl;
 	}
 	
-	Anchor(Domain domain, String anchorHash, String anchorUrl, int scanStatus, boolean activated, Timestamp modified, Timestamp created)
+	public Anchor(Domain domain, String anchorHash, String anchorUrl, int scanStatus, boolean activated, Timestamp modified, Timestamp created)
 	{
 		this.domain = domain;
 		this.anchorHash = anchorHash;
