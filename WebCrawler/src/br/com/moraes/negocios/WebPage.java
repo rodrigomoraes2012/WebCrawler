@@ -15,11 +15,13 @@ public class WebPage
 	private int emailParseStatus;
 	private Document document;
 
+	// Construtor para captura dos dados
 	public WebPage (Anchor anchor)
 	{
 		this.anchor = anchor;
 	}
 	
+	// JSoup carregando o html
 	private void loadDocumentFromWeb()
 	{
 		try 

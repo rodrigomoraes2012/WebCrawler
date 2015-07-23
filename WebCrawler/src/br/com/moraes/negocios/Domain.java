@@ -2,6 +2,10 @@ package br.com.moraes.negocios;
 
 import java.sql.Timestamp;
 
+/*
+ * Esta classe irá guardar informações básicas de objetos de domínio
+ * */
+
 public class Domain 
 {
 	private String domainHash;
@@ -18,7 +22,7 @@ public class Domain
 		this.domainURL = domainURL;
 	}
 	
-	// Dados vindo do banco de dados
+	// Construtor será utilizado para trazer os dados do banco de dados
 	public Domain(String domainHash, String domainURL, String activated,
 			Timestamp modified, Timestamp created) {
 		super();
@@ -30,6 +34,7 @@ public class Domain
 	}
 	
 	// Getters
+	// Não serão necessários os Setters, pois os dados serão inseridos pelos construtores
 	public String getDomainHash() {
 		return domainHash;
 	}
