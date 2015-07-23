@@ -11,13 +11,21 @@ public class PageCollector
 {
 	public static void main(String[] args) 
 	{
+		
+		/*
+		 * 1. Importar org.jsoup.Jsoup e org.jsoup.nodes.Document 
+		 * 2. Envolver em try catch
+		 * 
+		 * */
+		
 		try 
 		{
-			Document doc = Jsoup.connect("http://www.jsoup.org/").get();
-			Elements links = doc.select("a");
-			for(Element e: links)
+			Document doc = Jsoup.connect("http://jsoup.com").get();  
+			Elements links = doc.select("a"); // Selecionando a tag HTML
+			System.out.println("Número de links: " + links.size() + "\n");
+			for(Element e: links) // Importar  org.jsoup.nodes.Element
 			{
-					System.out.println(e.attr("abs:href"));
+					System.out.println(e.attr("abs:href")); //Imprime o conteúdo de um atributo da tag
 			}
 		} catch (IOException e) 
 		{
